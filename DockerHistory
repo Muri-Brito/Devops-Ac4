@@ -1,0 +1,11 @@
+$ history
+    1  clear
+    2  git clone https://github.com/Muri-Brito/Devops-Ac4.git
+    3  cd Devops-Ac4
+    4  vim Dockerfile
+    5  docker image build -t devops-ac4 .
+    6  docker run -p 5001:5000 -d devops-ac4
+    7  docker logs
+    8  docker ps
+    9  docker logs a7fd30a34bf0
+   10  history
