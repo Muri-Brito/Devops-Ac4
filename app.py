@@ -8,7 +8,7 @@ app = Flask(__name__)
 def fibonacci():
     a = 1
     b = 0
-    limite = 50
+    limite = 49
     count = 0
     saida = "0, "
     while count < limite:
@@ -16,7 +16,7 @@ def fibonacci():
         a = a+b
         b = t
         count = count+1
-        saida += str(a) + ","
+        saida += str(a) + ", "
 
     return saida
 
