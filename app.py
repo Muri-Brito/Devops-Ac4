@@ -1,8 +1,8 @@
 import os
-from flask import Flask, jsonify, request
-from math import sqrt
+from flask import Flask
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def fibonacci():
@@ -18,8 +18,8 @@ def fibonacci():
         count = count+1
         saida += str(a) + ","
 
+    return saida
 
-   return saida
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
